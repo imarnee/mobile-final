@@ -1,0 +1,160 @@
+/* font-family: 'Lobster', cursive;
+font-family: 'Open Sans', sans-serif; */ 
+ 
+/* @media screen and (max-width: 800px) {
+  .top, body, .footer {
+    width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+  /* }
+}
+
+@media only screen and (max-width: 620px) {
+  /* For mobile phones: */
+  /* .top, body, .footer,{
+    width: 100%;
+  }
+} */ 
+
+
+/* For mobile phones: */
+[class*="col-"] {
+    width: 100%;
+  }
+  
+  /* @media only screen and (min-width: 600px) {
+    /* For tablets: */
+    /* .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;} */
+  /* }
+  @media only screen and (min-width: 768px) {
+    /* For desktop: */
+    /* .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;} */
+    /* .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+  } */ 
+  
+  @viewport {
+    width: device-width ;
+    zoom: 1.0 ;
+  }
+  
+  @-ms-viewport {
+    width: device-width ;
+  }
+  
+  /* code that is here, until the first @media block, will apply to any screen size */
+  #somethingorother {
+    width: 800px ;
+  }
+  
+  @media screen and (max-width: 320px) {
+    /* comes into effect for screens less than or equal to 320 pixels */
+    #somethingorother {
+      width: 120px ;
+    }
+  }
+  @media screen and (min-width: 321px) and (max-width: 480px) {
+    /* comes into effect for screens between 321 and 480 pixels (inclusive) */
+    #somethingorother {
+      width: 320px ;
+    }
+  }
+  @media screen and (min-width: 481px) {
+    /* comes into effect for screens larger than or equal to 481 pixels */
+    #somethingorother {
+      width: 480px ;
+    }
+  }
+  
+  /* code that is here will apply to any screen size */
+  
+  .parallax {
+      background-position: center center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+  }
+  
+  .containerSpacing {
+      padding: 5rem 0 2rem 0;
+  }
+  
+  h1 {
+      font-family: 'Lobster', cursive;
+  }
+  
+  body {
+      font-family: 'Open Sans', sans-serif;
+      font-size: 2vw;
+  }
+  
+  .profile-image {
+    display: block;
+    margin: 0 auto;
+    border-radius: 100%;
+    width: 200px;
+  }
+  
+  .progress {
+    background-color: #F8BBD0;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  
+  .toppage {
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    margin-top: 5%;
+  }
+  
+  .footer {
+    position: static;
+    background-color: #F8BBD0;
+    text-align: center;
+    width: 100%;
+    margin-top: 0%;
+  }
+  
+  .typewriter {
+    color: #fff;
+    font-family: monospace;
+    font-size: 2vw;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typwriter cursor */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(30, end),
+      blink-caret .5s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange }
+  }
